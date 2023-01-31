@@ -112,7 +112,7 @@ class MultiTaskTimeSeriesModelsTests(unittest.TestCase):
             self.assertEqual(y.size(), (2, model.n_out, model.space_dim))
 
     def test_prepare_to_classify(self):
-        for Model, params in small_models:
+        for Model, params in small_models:  # might be self.models
             for task_params in [{}, {'n_features': 10}, {'n_features': 5, 'n_out': 10}]:
                 model = Model(**task_params, **params, **common_parameters)
                 model.prepare_to_classify(n_classes=10)

@@ -1,3 +1,6 @@
+import sys
+sys.path.insert(1, 'E:/TEGAN/validyna')
+
 import os
 from typing import Optional
 
