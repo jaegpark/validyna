@@ -12,7 +12,7 @@ It allows to write many kinds of experiments in a multi-task setting, and includ
 2. Run the command `conda env create -f environment.yml`
    1. this will create an environment named `chaos`
    2. you can change the environment name in the `environment.yml` file before running the command
-3. Run the command `export PYTHONPATH="${PYTHONPATH}:${pwd}/validyna"` to add validyna to the set of libraries that can be imported
+3. (For Linux), run the command `export PYTHONPATH="${PYTHONPATH}:${pwd}/validyna"` to add validyna to the set of libraries that can be imported
 
 ## Project structure
 - `validyna`: the source code for the project
