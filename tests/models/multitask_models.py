@@ -16,7 +16,7 @@ class MultiTaskTimeSeriesModelsTests(unittest.TestCase):
 
     def __init__(self):
         super().__init__()
-        self.models = [
+        self.models = [                         # TODO: add implementation of NODE to tests
             (MultiNBEATS, {
                 'n_stacks': 4,
                 'n_blocks': 4,
