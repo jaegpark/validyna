@@ -345,6 +345,7 @@ class MultiRNN(MultiTaskTimeSeriesModel, ABC):
     def name(cls):
         return cls.RNN().__name__
 
+# TODO: look into what a staticmethod is in python
 
 class MultiGRU(MultiRNN):
     @staticmethod
@@ -537,4 +538,20 @@ class MultiTransformer(MultiTaskTimeSeriesModel):
         return 'Transformer'
 
 
+
+class NeuralODE(MultiTaskTimeSeriesModel):
+    """
+    Implements a Neural ODE. 
+    TODO: 
+        - look into types of black box ODE solvers, and choose an approrpriate one
+        - look into related literature on if neural odes have been used to forecast/classify/featurize
+            - look for GH repos
+    """
+
+
+
+    pass
+
+
 all_implementations = [MultiGRU, MultiLSTM, MultiNBEATS, MultiTransformer]
+    # TODO: add to list of all implementations
